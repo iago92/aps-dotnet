@@ -16,9 +16,9 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<UniversityDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-// DI registrations (IoC)
-builder.Services.AddScoped<IStudentService, StudentService>();
-builder.Services.AddScoped<University.Domain.Repositories.IStudentRepository, StudentRepository>();
+// DI registrations (IoC) - em português
+builder.Services.AddScoped<University.Application.Interfaces.IAlunoServico, University.Application.Services.AlunoServico>();
+builder.Services.AddScoped<University.Domain.Repositories.IAlunoRepositorio, University.Infrastructure.Repositories.AlunoRepositorio>();
 
 var app = builder.Build();
 
@@ -42,6 +42,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Alunos}/{action=Index}/{id?}");
 
 app.Run();

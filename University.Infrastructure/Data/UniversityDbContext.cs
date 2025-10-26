@@ -9,20 +9,21 @@ namespace University.Infrastructure.Data
         {
         }
 
-        public DbSet<Student> Students { get; set; }
+    public DbSet<University.Domain.Entities.Aluno> Alunos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Student>(b =>
+            modelBuilder.Entity<University.Domain.Entities.Aluno>(b =>
             {
                 b.HasKey(x => x.Id);
-                b.Property(x => x.FirstName).IsRequired().HasMaxLength(100);
-                b.Property(x => x.LastName).IsRequired().HasMaxLength(100);
-                b.Property(x => x.Email).IsRequired().HasMaxLength(200);
-                b.Property(x => x.Age).IsRequired();
-                b.Property(x => x.CreatedAt).IsRequired();
+                b.Property("PrimeiroNome").IsRequired().HasMaxLength(100);
+                b.Property("Sobrenome").IsRequired().HasMaxLength(100);
+                b.Property("Email").IsRequired().HasMaxLength(200);
+                b.Property("Idade").IsRequired();
+                b.Property("CriadoEm").IsRequired();
+                b.ToTable("Alunos");
             });
         }
     }
