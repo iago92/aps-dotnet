@@ -1,0 +1,12 @@
+/workspaces/teste11/University.Domain/bin/Debug/net8.0/University.Domain.deps.json
+/workspaces/teste11/University.Domain/bin/Debug/net8.0/University.Domain.dll
+/workspaces/teste11/University.Domain/bin/Debug/net8.0/University.Domain.pdb
+/workspaces/teste11/University.Domain/obj/Debug/net8.0/University.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/teste11/University.Domain/obj/Debug/net8.0/University.Domain.AssemblyInfoInputs.cache
+/workspaces/teste11/University.Domain/obj/Debug/net8.0/University.Domain.AssemblyInfo.cs
+/workspaces/teste11/University.Domain/obj/Debug/net8.0/University.Domain.csproj.CoreCompileInputs.cache
+/workspaces/teste11/University.Domain/obj/Debug/net8.0/University.Domain.sourcelink.json
+/workspaces/teste11/University.Domain/obj/Debug/net8.0/University.Domain.dll
+/workspaces/teste11/University.Domain/obj/Debug/net8.0/refint/University.Domain.dll
+/workspaces/teste11/University.Domain/obj/Debug/net8.0/University.Domain.pdb
+/workspaces/teste11/University.Domain/obj/Debug/net8.0/ref/University.Domain.dll
