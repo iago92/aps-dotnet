@@ -10,3 +10,15 @@
 /workspaces/teste11/University.Domain/obj/Debug/net8.0/refint/University.Domain.dll
 /workspaces/teste11/University.Domain/obj/Debug/net8.0/University.Domain.pdb
 /workspaces/teste11/University.Domain/obj/Debug/net8.0/ref/University.Domain.dll
+/workspaces/aps-dotnet/University.Domain/bin/Debug/net8.0/University.Domain.deps.json
+/workspaces/aps-dotnet/University.Domain/bin/Debug/net8.0/University.Domain.dll
+/workspaces/aps-dotnet/University.Domain/bin/Debug/net8.0/University.Domain.pdb
+/workspaces/aps-dotnet/University.Domain/obj/Debug/net8.0/University.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/aps-dotnet/University.Domain/obj/Debug/net8.0/University.Domain.AssemblyInfoInputs.cache
+/workspaces/aps-dotnet/University.Domain/obj/Debug/net8.0/University.Domain.AssemblyInfo.cs
+/workspaces/aps-dotnet/University.Domain/obj/Debug/net8.0/University.Domain.csproj.CoreCompileInputs.cache
+/workspaces/aps-dotnet/University.Domain/obj/Debug/net8.0/University.Domain.sourcelink.json
+/workspaces/aps-dotnet/University.Domain/obj/Debug/net8.0/University.Domain.dll
+/workspaces/aps-dotnet/University.Domain/obj/Debug/net8.0/refint/University.Domain.dll
+/workspaces/aps-dotnet/University.Domain/obj/Debug/net8.0/University.Domain.pdb
+/workspaces/aps-dotnet/University.Domain/obj/Debug/net8.0/ref/University.Domain.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fG9m9LxRpwk=",
+  "dgSpecHash": "v9XhqWIoBPw=",
   "success": true,
-  "projectFilePath": "/workspaces/teste11/University.Domain/University.Domain.csproj",
+  "projectFilePath": "/workspaces/aps-dotnet/University.Domain/University.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

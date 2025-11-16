@@ -1,0 +1,55 @@
+@model University.Application.ViewModels.ProductViewModel
+
+@{
+    ViewData["Title"] = "Detalhes do Produto";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>@ViewData["Title"]</h1>
+            
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Name</h5>
+                    
+                    <p class="card-text">
+                        <strong>Categoria:</strong> @Model.CategoryName
+                    </p>
+                    
+                    <p class="card-text">
+                        <strong>Descrição:</strong> @Model.Description
+                    </p>
+
+                    <p class="card-text">
+                        <strong>Preço:</strong> <span class="badge bg-success">R$ @Model.Price.ToString("F2")</span>
+                    </p>
+
+                    <p class="card-text">
+                        <strong>Estoque:</strong> <span class="badge bg-info">@Model.Stock unidades</span>
+                    </p>
+                    
+                    <p class="card-text">
+                        <strong>Criado em:</strong> @Model.CreatedAt.ToString("dd/MM/yyyy HH:mm:ss")
+                    </p>
+
+                    @if (Model.UpdatedAt.HasValue)
+                    {
+                        <p class="card-text">
+                            <strong>Atualizado em:</strong> @Model.UpdatedAt.Value.ToString("dd/MM/yyyy HH:mm:ss")
+                        </p>
+                    }
+                </div>
+            </div>
+
+            <div class="mt-3">
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+                    <i class="bi bi-pencil"></i> Editar
+                </a>
+                <a asp-action="Index" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left"></i> Voltar
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

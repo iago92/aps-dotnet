@@ -3,6 +3,8 @@ using University.Infrastructure.Data;
 using University.Infrastructure.Repositories;
 using University.Application.Interfaces;
 using University.Application.Services;
+using University.Application.Mappings;
+using University.Domain.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,9 +18,20 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<UniversityDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-// DI registrations (IoC) - em português
-builder.Services.AddScoped<University.Application.Interfaces.IAlunoServico, University.Application.Services.AlunoServico>();
-builder.Services.AddScoped<University.Domain.Repositories.IAlunoRepositorio, University.Infrastructure.Repositories.AlunoRepositorio>();
+// Configurar Mapster
+MappingConfig.RegisterMappings();
+
+// DI Registrations (Inversion of Control) - Serviços e Repositórios
+// Repositories
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IAlunoRepositorio, AlunoRepositorio>();
+
+// Application Services
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IAlunoServico, AlunoServico>();
+builder.Services.AddScoped<IStudentService, StudentService>();
 
 var app = builder.Build();
 
@@ -42,6 +55,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Alunos}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

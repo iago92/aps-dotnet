@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/teste11/University.Application/University.Application.csproj": {}
+    "/workspaces/aps-dotnet/University.Application/University.Application.csproj": {}
   },
   "projects": {
-    "/workspaces/teste11/University.Application/University.Application.csproj": {
+    "/workspaces/aps-dotnet/University.Application/University.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/teste11/University.Application/University.Application.csproj",
+        "projectUniqueName": "/workspaces/aps-dotnet/University.Application/University.Application.csproj",
         "projectName": "University.Application",
-        "projectPath": "/workspaces/teste11/University.Application/University.Application.csproj",
+        "projectPath": "/workspaces/aps-dotnet/University.Application/University.Application.csproj",
         "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/teste11/University.Application/obj/",
+        "outputPath": "/workspaces/aps-dotnet/University.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/codespace/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/workspaces/teste11/University.Domain/University.Domain.csproj": {
-                "projectPath": "/workspaces/teste11/University.Domain/University.Domain.csproj"
+              "/workspaces/aps-dotnet/University.Domain/University.Domain.csproj": {
+                "projectPath": "/workspaces/aps-dotnet/University.Domain/University.Domain.csproj"
               }
             }
           }
@@ -46,6 +46,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,18 +68,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.415/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/workspaces/teste11/University.Domain/University.Domain.csproj": {
+    "/workspaces/aps-dotnet/University.Domain/University.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/teste11/University.Domain/University.Domain.csproj",
+        "projectUniqueName": "/workspaces/aps-dotnet/University.Domain/University.Domain.csproj",
         "projectName": "University.Domain",
-        "projectPath": "/workspaces/teste11/University.Domain/University.Domain.csproj",
+        "projectPath": "/workspaces/aps-dotnet/University.Domain/University.Domain.csproj",
         "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/teste11/University.Domain/obj/",
+        "outputPath": "/workspaces/aps-dotnet/University.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/codespace/.nuget/NuGet/NuGet.Config"
@@ -120,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.415/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
